@@ -49,7 +49,7 @@ namespace TextAdventure
 
 			if (currentLocation.getInventory().Count > 0)
 			{
-				Console.WriteLine("\nThe room contains the following:\n");
+				Console.WriteLine("\nThe room has the following inside of it:\n");
 
 				for ( int i = 0; i < currentLocation.getInventory().Count; i++ )
 				{
@@ -77,7 +77,7 @@ namespace TextAdventure
 		{
 			if ( inventory.Count > 0 )
 			{
-				Console.WriteLine("\nA quick look in your bag reveals the following:\n");
+				Console.WriteLine("\nA quick Gander in your bag reveals the following:\n");
 
 				foreach ( Item item in inventory )
 				{
@@ -86,7 +86,7 @@ namespace TextAdventure
 			}
 			else
 			{
-				Console.WriteLine("Your bag is empty.");
+				Console.WriteLine("But nothing was there :(.");
 			}
 
 			Console.WriteLine("");
